@@ -9,3 +9,6 @@ int_coeffs = polyint(p,y0);
 syms x;
 der_func = char(poly2sym(der_coeffs, x));
 int_func = char(poly2sym(int_coeffs, x));
+% Report the functions for the derivative and integral of this function
+fprintf('\nThe derivative of the function is %s.\n', char(poly2sym(der_coeffs, x)));
+fprintf('The integral of the function is %s.\n', char(poly2sym(int_coeffs, x)));
